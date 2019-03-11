@@ -334,6 +334,18 @@ static codec_def_t __codec_defs[] = {
 		.set_enc_options = amr_set_enc_options,
 		.set_dec_options = amr_set_dec_options,
 	},
+	{
+		.rtpname = "L16",
+		.avcodec_id = AV_CODEC_ID_PCM_S16LE,
+		.clockrate_mult = 1,
+		.default_clockrate = 8000,
+		.default_channels = 1,
+		.default_ptime = 20,
+		.packetizer = packetizer_samplestream,
+		.bits_per_sample = 16,
+		.media_type = MT_AUDIO,
+		.codec_type = &codec_type_avcodec,
+	},
 	// pseudo-codecs
 	{
 		.rtpname = "telephone-event",
