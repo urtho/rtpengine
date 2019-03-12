@@ -336,7 +336,7 @@ static codec_def_t __codec_defs[] = {
 	},
 	{
 		.rtpname = "L16",
-		.avcodec_id = AV_CODEC_ID_PCM_S16LE,
+		.avcodec_id = AV_CODEC_ID_PCM_S16BE,
 		.clockrate_mult = 1,
 		.default_clockrate = 8000,
 		.default_channels = 1,
